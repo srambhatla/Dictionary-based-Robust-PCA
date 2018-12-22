@@ -17,6 +17,7 @@ Code corresponding to the theoretical and experimental analysis in the papers
 For Indian Pines:
 ```python
 load('S.mat'); load('gt.mat'); 
+
 ```
 For Pavia University:
 ```python
