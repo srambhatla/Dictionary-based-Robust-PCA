@@ -29,7 +29,7 @@ if (dict_siz > 0)
 	R = nrmc(R);
 else 
 
-% From static pixels in case of Indian Pines dataset
+% From static pixels in case of Indian Pines dataset uncomment the following
 %% Form Dictionary Elements
 %R = [squeeze(Y_b(16, 49, :))...
 %    squeeze(Y_b(17, 48, :))...

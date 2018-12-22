@@ -34,5 +34,5 @@ TO selectively run specific values select the indices (between `1` and `100`) th
 
 `clss`: the class #, `dict_lam` : regularization parameter for dictionary learning step, `dict_size`: the size of the dictionary to be learned, `out_folder`: the path of the output folder, `gt`: the ground truth matrix, and `S`: the 3D-scene matrix. 
 
-If ``dict_size = 0` then the code will load the static dictionary `R.mat` in case of Pavia University and pick up voxels for the Indian Pines dataset. You will need to uncomment the matrix `R` in this case. 
+If `dict_size = 0` then the code will load the static dictionary `R.mat` in case of Pavia University and pick up voxels for the Indian Pines dataset. You will need to uncomment the matrix `R` in this case. 
 
