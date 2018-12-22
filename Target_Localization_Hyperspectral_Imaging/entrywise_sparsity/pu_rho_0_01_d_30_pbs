@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=24,mem=350gb,walltime=96:00:00
+#PBS -m abe
+#PBS -M rambh002@umn.edu
+cd /home/hauptj/rambh002/hyper_spec_DL/roc_code/
+module load matlab/R2015b
+mkdir roc_res_c5_d30_lam_0_01_pu_ew
+matlab -nodesktop -r "tic; load('S_pavia.mat'); load('gt_pavia.mat'); id_par = [1 2 4 8 9 15 16 23 31 43 50 65 69 79:100]; hyperSpec_func(5, 0.01, 30, 'roc_res_c5_d30_lam_0_01_pu_ew', gt, S, id_par); fprintf('Runtime: %s', toc); exit"

@@ -1,0 +1,7 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=10,mem=200gb,walltime=96:00:00
+#PBS -m abe
+#PBS -M rambh002@umn.edu
+cd /home/hauptj/rambh002/LrThDict/code/
+module load matlab/R2015b
+matlab -nodesktop -r "tic; run_lr_dict_col_sp(5:5:100, 600:50:900, 150, '/home/hauptj/rambh002/LrThDict/code/Results_Col_D150/'); fprintf('Runtime: %s', toc); exit"
